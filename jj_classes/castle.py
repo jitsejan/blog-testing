@@ -1,17 +1,38 @@
+""" jj_classes/castle.py """
+
+
 class Castle(object):
+    """ Defines the Castle class """
+
     def __init__(self, name):
-        self.name = name
-        self.boss = 'Bowser'
-        self.world = 'Grass Land'
+        """ Initialize the class """
+        self._name = name
+        self._boss = "Bowser"
+        self._world = "Grass Land"
 
     def access(self, character):
-        if character.powerup == 'Super Mushroom':
-            return True
-        else:
-            return False
-    
+        """ Check if character has access """
+        return character.powerup == "Super Mushroom"
+
     def get_boss(self):
+        """ Returns the boss """
         return self.boss
 
     def get_world(self):
+        """ Returns the world """
         return self.world
+
+    @property
+    def name(self):
+        """ Name of the castle """
+        return self._name
+
+    @property
+    def boss(self):
+        """ Boss of the castle """
+        return self._boss
+
+    @property
+    def world(self):
+        """ World of the castle """
+        return self._world
