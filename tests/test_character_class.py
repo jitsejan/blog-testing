@@ -21,12 +21,12 @@ class CharacterTestClass(unittest.TestCase):
     def test_mock_access_denied(self):
         """ Access denied for star powerup """
         mock_character = mock.Mock(powerup="Starman")
-        self.assertFalse(self.castle.access(mock_character))
+        self.assertFalse(self.castle.has_access(mock_character))
 
     def test_mock_access_granted(self):
         """ Access granted for mushroom powerup """
         mock_character = mock.Mock(powerup="Super Mushroom")
-        self.assertTrue(self.castle.access(mock_character))
+        self.assertTrue(self.castle.has_access(mock_character))
 
     def test_default_castle_boss(self):
         """ Verifty the default boss is Bowser """
@@ -74,14 +74,14 @@ class CharacterTestClass(unittest.TestCase):
         self.assertRaises(StopIteration, multi_boss_castle.get_boss)
 
     def test_calls_to_castle(self):
-        self.castle.access = mock.Mock()
-        self.castle.access.return_value = "No access"
+        self.castle.has_access = mock.Mock()
+        self.castle.has_access.return_value = "No access"
         # We should retrieve no access for everybody
-        self.assertEqual(self.castle.access("Let me in"), "No access")
-        self.assertEqual(self.castle.access("Let me in, please"), "No access")
-        self.assertEqual(self.castle.access("Let me in, please sir!"), "No access")
+        self.assertEqual(self.castle.has_access("Let me in"), "No access")
+        self.assertEqual(self.castle.has_access("Let me in, please"), "No access")
+        self.assertEqual(self.castle.has_access("Let me in, please sir!"), "No access")
         # Verify the length of the arguments list
-        self.assertEqual(len(self.castle.access.call_args_list), 3)
+        self.assertEqual(len(self.castle.has_access.call_args_list), 3)
 
 
 if __name__ == "__main__":

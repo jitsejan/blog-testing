@@ -10,7 +10,7 @@ class Castle(object):
         self._boss = "Bowser"
         self._world = "Grass Land"
 
-    def access(self, character):
+    def has_access(self, character):
         """ Check if character has access """
         return character.powerup == "Super Mushroom"
 
