@@ -17,24 +17,6 @@ class TestCharacterClass:
         """ Set the castle for the test cases """
         self.castle = Castle("Bowsers Castle")
 
-    def test_mock_access_denied(self, mocker):
-        """ Access denied for star powerup """
-        mock_character = mocker.Mock(powerup="Starman")
-        assert self.castle.has_access(mock_character) is False
-
-    def test_mock_access_granted(self, mocker):
-        """ Access granted for mushroom powerup """
-        mock_character = mocker.Mock(powerup="Super Mushroom")
-        assert self.castle.has_access(mock_character)
-
-    def test_default_castle_boss(self):
-        """ Verifty the default boss is Bowser """
-        assert self.castle.get_boss() == "Bowser"
-
-    def test_default_castle_world(self):
-        """ Verify the default world is Grass Land """
-        assert self.castle.get_world(), "Grass Land"
-
     # Mock a class method
     def test_mock_castle_boss(self, mocker):
         mock_get_boss = mocker.patch.object(Castle, "get_boss")
