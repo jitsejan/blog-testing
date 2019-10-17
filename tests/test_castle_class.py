@@ -1,4 +1,4 @@
-""" tests/test_castle_class_pytest.py """
+""" tests/test_castle_class.py """
 import pytest
 from jj_classes.castle import Castle
 

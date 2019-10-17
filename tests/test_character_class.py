@@ -1,3 +1,4 @@
+""" tests/test_character_class.py """
 import pytest
 from jj_classes.character import Character
 
