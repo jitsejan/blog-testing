@@ -12,10 +12,10 @@ except ModuleNotFoundError:
     from jj_classes.castle import Castle
 from jj_classes.character import Character
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="class")
 def castle():
     return Castle(CASTLE_NAME)
 
-@pytest.fixture(scope="session")
+@pytest.fixture(scope="class")
 def character():
     return Character(CHARACTER_NAME)
