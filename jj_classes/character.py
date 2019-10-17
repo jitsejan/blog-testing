@@ -27,4 +27,3 @@ class Character(object):
     def powerup(self, powerup):
         """ Sets the powerup """
         self._powerup = powerup
-
