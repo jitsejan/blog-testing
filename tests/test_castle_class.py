@@ -16,16 +16,15 @@ class TestCastleClass:
         with pytest.raises(TypeError, match=expected_error):
             castle = Castle()
 
-    def test_has_access_true_with_super_mushroom(self, castle, character):
+    @pytest.mark.parametrize('powerup,has_access', [
+        ("Super Mushroom", True),
+        ("Not a mushroom", False),
+    ], ids=['successful', 'failure-without-super-mushroom'])
+    def test_has_access_true_with_super_mushroom(self, castle, character, powerup, has_access):
         """ Test that has_access returns True for Super Mushroom """
-        character.powerup = 'Super Mushroom'
-        assert castle.has_access(character)
+        character.powerup = powerup
+        assert castle.has_access(character) == has_access
 
-    def test_has_access_false_without_super_mushroom(self, castle, character):
-        """ Test that has_access returns False for other powerups """
-        character.powerup = 'Not a mushroom'
-        assert castle.has_access(character) is False
-    
     def test_get_boss_returns_bowser(self, castle):
         """ Test that the get_boss returns Bowser """
         assert castle.get_boss() == 'Bowser'
