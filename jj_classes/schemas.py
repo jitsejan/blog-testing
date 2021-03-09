@@ -6,6 +6,11 @@ class Character(BaseModel):
     """Defines the Character class"""
 
     name: str
+
+
+class CharacterInGame(Character):
+    """Defines the Character in Game class"""
+    lives: int
     powerups: Optional[List[str]] = []
 
 
