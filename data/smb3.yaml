@@ -1,0 +1,56 @@
+name: Super Mario Bros 3
+items:
+- Super Mushroom
+- Fire Flower
+- Super Leaf
+- Starman
+- Tanooki Suit
+- Frog Suit
+- Hammer Suit
+- Kuribo's Shoe
+- Hammer
+- Music Box
+- Anchor
+- Jugem's Cloud
+- Magic Whistle
+- Magic Wing
+- Coin
+- 1-Up Mushroom
+enemies:
+- Para-Goomba
+- Para-Beetles
+- Micro-Goombas
+- Firesnake
+- Fire Chomp
+- Chain Chomp
+- Bloober with kids
+- Cheep-Cheep
+- Jelectro
+- Lava Lotus
+- Buzzy Beetle
+- Spike
+- Bob-Omb
+- Rocky Wrench
+- Thwomp
+- Rotodisc
+- Boo Diddly
+- Hot Foot
+- Dry Bones
+- Stretch
+- Boom Boom
+- Venus Fire Trap
+- Ptooie
+- Walking Piranas
+- Munchers
+- Boomerang Brothers
+- Fire Brothers
+- Sledge Brothers
+- Bowser
+characters:
+- Mario
+- Luigi
+secrets:
+  whistles:
+  - 1-3
+  - World 1 Fortress
+  - Boomerang Bros World 2

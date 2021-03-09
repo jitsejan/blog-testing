@@ -1,0 +1,28 @@
+name: Super Mario Bros
+items:
+- Magic Mushroom
+- Fire Flower
+- Starman
+characters:
+- Mario
+- Luigi
+enemies:
+- Koopa Troopa green
+- Koopa Troopa red
+- Koopa Paratroopa red
+- Koopa Paratroopa green
+- Buzzy Beetle
+- Little Goomba
+- The Hammer Brothers
+- Spiny
+- Lakitu
+- Pirana plants
+- Spiny's eggs
+- Cheep-cheep
+- Bullet Bill
+- Bloober
+- Bowser
+secrets:
+  warpzone:
+    - 1-2
+    - 4-2

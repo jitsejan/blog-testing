@@ -1,0 +1,53 @@
+name: Super Mario Bros 2
+items:
+- Coin
+- Vegetable
+- Bomb
+- Unripened Vegetable
+- Turtle Shell
+- Mushroom Block
+- Mushroom
+- 1-Up Mushroom
+- Small Heart
+- POW
+- Key
+- Starman
+- Cherries
+- Stop watch
+characters:
+- Mario
+- Luigi
+- Toad
+- Princess
+enemies:
+- Shyguy Red
+- Shyguy Pink
+- Tweeter
+- Snifit Red
+- Snifit Gray
+- Snifit Pink
+- Ninji 1
+- Ninji 2
+- Beezo Red
+- Beezo Pink
+- Hoopster
+- Phanto
+- Trouter
+- Porcupo
+- Bob-Omb
+- Albatoss
+- Pidgit
+- Cobrat
+- Panser
+- Ostro
+- Pokey
+- Autobomb
+- Flurry
+- Spark
+- Birdo
+- Mouser
+- Fryguy
+- Tryclyde
+- Clawgrip
+- Wart
+- Bowser
